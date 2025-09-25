@@ -12,6 +12,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 class Controller extends BaseController
 {
     // Sugestão: Controllers devem apenas orquestrar requests e delegar ao UseCase
+    // Sugestão: Adicionar no Controller documetação Swagger ou similar para facilitar entendimento e uso da API
     use DispatchesJobs;
     use ValidatesRequests;
     use AuthorizesRequests;

@@ -6,6 +6,10 @@ use App\Traits\Instancer;
 
 abstract class BaseDomain
 {
+    // Sugestão: Seguindo boas práticas da arquitetura DDD seria interessante  criar folder Entities dentro da pasta Domains para armazenar as entidades do sistema
+    // Sugestão: Criar folders Repositories e ValueObjects para organizar melhor o código
+    // Sugestão: Criar folder Infrastructure em Integrations.
+    // Intuito:  Separar domínio, persistência, integrações e orquestração
     use Instancer;
 
     /**

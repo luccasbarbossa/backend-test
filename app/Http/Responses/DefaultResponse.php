@@ -9,6 +9,7 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
 
 class DefaultResponse
 {
+    // Sugestão: Criação de ResponseBuilder para facilitar a criação de respostas padronizadas reduzindo repetição e melhorando clareza nos controllers
     /**
      * @var array
      */

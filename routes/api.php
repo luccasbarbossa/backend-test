@@ -19,6 +19,9 @@ use App\Http\Controllers\HealthCheckController;
 */
 
 //Sugestão: nomear as rotas para facilitar a identificação em logs, monitoramento e testes
+//Sugestão: falta de padrão na nomenclatura das rotas (algumas no plural, outras no singular)
+//Sugestão: Versionamento na API (ex: v1, v2) para facilitar futuras atualizações e manutenção
+//Sugestão: Habilitar Throttle nos routes para evitar abuso e ataques de força bruta
 
 // Healthcheck
 Route::get('healthcheck', [HealthCheckController::class, 'healthCheck']);

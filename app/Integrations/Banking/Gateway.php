@@ -13,6 +13,7 @@ use Psr\SimpleCache\InvalidArgumentException;
 
 class Gateway
 {
+    // Sugestão: Adicionar circuit breaker para melhorar resiliência em caso de falhas na BaaS
     use Logger;
 
     /**
