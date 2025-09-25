@@ -14,6 +14,7 @@ use Psr\SimpleCache\InvalidArgumentException;
 class Gateway
 {
     // Sugestão: Adicionar circuit breaker para melhorar resiliência em caso de falhas na BaaS
+    // Sugestão: Implemntar fila para processar chamadas externas (Bass) sem travar a request ter retry e controle de falhas.
     use Logger;
 
     /**
