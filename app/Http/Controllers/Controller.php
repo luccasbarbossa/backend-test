@@ -11,6 +11,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Controller extends BaseController
 {
+    // Sugestão: Controllers devem apenas orquestrar requests e delegar ao UseCase
     use DispatchesJobs;
     use ValidatesRequests;
     use AuthorizesRequests;

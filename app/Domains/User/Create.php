@@ -111,6 +111,7 @@ class Create extends BaseDomain
         }
     }
 
+    // Sugestão: Criar ENUM para tipos, evita erros com valores soltos.
     /**
      * Valida o tipo
      *

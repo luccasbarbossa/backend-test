@@ -6,6 +6,7 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class IndexRequest extends FormRequest
 {
+    // Reavaliar uso de sometimes
     /**
      * Get the validation rules that apply to the request.
      *

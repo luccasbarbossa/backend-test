@@ -6,6 +6,7 @@ use App\UseCases\Params\BaseParams;
 
 class CreateFirstUserParams extends BaseParams
 {
+    // Sugestão: desacoplar parâmetros de empresa e usuário em classes distintas.
     /**
      * Nome da empresa
      *

@@ -28,6 +28,9 @@ use App\Http\Resources\User\IndexCollectionResource;
 
 class UserController extends Controller
 {
+    
+    // Usar injeção de dependência via interfaces para deixar o código mais limpo, desacoplado, reutilizável e testável
+
     /**
      * Para primeiro acesso, cria um usuário MANAGER e a empresa
      *
@@ -48,6 +51,7 @@ class UserController extends Controller
             $request->password
         );
 
+        // Forte acoplamento ao validar empresa na criação do usuário.
         $useCase  = new CreateFirstUser($params);
         $response = $useCase->handle();
 
@@ -112,6 +116,7 @@ class UserController extends Controller
      */
     public function show(string $id): JsonResponse
     {
+        // De acordo com a PSR-12 nome de classe deve começar com letra maiúscula
         $response = (new show($id, Auth::user()->company_id))->handle();
 
         return $this->response(

@@ -6,8 +6,10 @@ use Throwable;
 use App\UseCases\BaseUseCase;
 use App\Repositories\User\Find;
 
+// De acordo com a PSR-12 nome de classe deve começar com letra maiúscula
 class show extends BaseUseCase
 {
+    // De acordo com o Clean Code nomes de variáveis devem ser descritivos.
     /**
      * Id do usuário
      *

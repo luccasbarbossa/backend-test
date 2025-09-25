@@ -7,6 +7,8 @@ use App\Http\Responses\DefaultResponse;
 
 trait ResponseHelpers
 {
+    // Sugestão: Unificar os métodos sendResponse, sendError e sendData em um único método com parâmetros opcionais.
+    // Sugestão: Utilizar constantes para os códigos de status HTTP (Response::HTTP_OK, Response::HTTP_INTERNAL_SERVER_ERROR, etc.)
     /**
      * Success json response helper
      *

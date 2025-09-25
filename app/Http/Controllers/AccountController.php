@@ -14,6 +14,7 @@ use App\Http\Resources\Account\ShowResource;
 
 class AccountController extends Controller
 {
+    // Usar injeção de dependência via interfaces para deixar o código mais limpo, desacoplado, reutilizável e testável
     /**
      * Ativa a conta bancária
      *

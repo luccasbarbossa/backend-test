@@ -11,6 +11,7 @@ use App\Integrations\Banking\Card\Find;
 
 class CardController extends Controller
 {
+    // Usar injeção de dependência via interfaces para deixar o código mais limpo, desacoplado, reutilizável e testável
     /**
      * Exibe dados de um cartão
      *
@@ -27,6 +28,7 @@ class CardController extends Controller
         );
     }
 
+    // Sugestão: Adicionar validação de PIN e card_id no Request.
     /**
      * Ativa um cartão
      *

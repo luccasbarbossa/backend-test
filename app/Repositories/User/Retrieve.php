@@ -8,6 +8,7 @@ use Illuminate\Pagination\LengthAwarePaginator;
 
 class Retrieve extends BaseRepository
 {
+    //Sugestão: evitar whereRaw para prevenir SQL Injection 
     /**
      * Id da empresa
      *

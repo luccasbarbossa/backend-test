@@ -31,6 +31,7 @@ class Find extends BaseRepository
         $this->model = User::class;
     }
 
+    // Por convenção, __construct deve vir antes de outros métodos.
     public function __construct(string $id, string $companyId)
     {
         $this->id        = $id;

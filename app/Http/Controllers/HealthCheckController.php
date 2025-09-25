@@ -11,7 +11,7 @@ class HealthCheckController extends Controller
     /**
      * Healthcheck
      *
-     * POST api/healthcheck
+     * GET api/healthcheck
      *
      * @return JsonResponse
      */

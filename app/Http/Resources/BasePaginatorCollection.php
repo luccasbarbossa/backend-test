@@ -7,6 +7,7 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
 
 class BasePaginatorCollection extends ResourceCollection
 {
+    // Sugestão: o parâmetro $order não está sendo utilizado.
     public function __construct($resource, string $order = null)
     {
         $resource = Paginator::fromLengthAwarePaginator($resource);

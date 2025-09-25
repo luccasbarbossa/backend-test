@@ -15,6 +15,7 @@ return [
     |
     */
 
+    // Suggestão: usar redis em produção para melhor performance
     'default' => env('CACHE_DRIVER', 'file'),
 
     /*

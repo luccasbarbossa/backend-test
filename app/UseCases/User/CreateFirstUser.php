@@ -13,6 +13,8 @@ use App\Repositories\Company\Create as CreateCompanyRepository;
 
 class CreateFirstUser extends BaseUseCase
 {
+    // Forte acoplamento ao validar empresa na criação do usuário.
+
     /**
      * @var CreateFirstUserParams
      */
@@ -45,6 +47,7 @@ class CreateFirstUser extends BaseUseCase
         $this->params = $params;
     }
 
+    // Sugestão: renomear CreateCompanyDomain para ValidateCompanyDomain.
     /**
      * Valida a empresa
      *
@@ -70,6 +73,7 @@ class CreateFirstUser extends BaseUseCase
         $this->company = (new CreateCompanyRepository($domain))->handle();
     }
 
+    // Sugestão: renomear CreateUserDomain para ValidateUserDomain.
     /**
      * Valida o usuário
      *
@@ -109,6 +113,7 @@ class CreateFirstUser extends BaseUseCase
         $this->token = (new CreateToken($this->user['id']))->handle();
     }
 
+    // Sugestão: separar em dois casos de uso distintos para seguir o princípio da responsabilidade única (SRP).
     /**
      * Cria um usuário MANAGER e a empresa
      */

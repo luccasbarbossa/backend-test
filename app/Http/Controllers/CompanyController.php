@@ -16,6 +16,7 @@ use App\Repositories\Company\Update as CompanyUpdate;
 
 class CompanyController extends Controller
 {
+    // Usar injeção de dependência via interfaces para deixar o código mais limpo, desacoplado, reutilizável e testável
     /**
      * Endpoint de dados de empresa
      *
@@ -49,6 +50,8 @@ class CompanyController extends Controller
         ))->handle();
         (new CompanyUpdate($dominio))->handle();
 
+        // Sugestão: padronizar idioma
+        // Utilização de UseCase em vez do model diretamente.
         $resposta = Company::find(Auth::user()->company_id)->first()->toArray();
 
         return $this->response(

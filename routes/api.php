@@ -17,6 +17,9 @@ use App\Http\Controllers\HealthCheckController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+//Sugestão: nomear as rotas para facilitar a identificação em logs, monitoramento e testes
+
 // Healthcheck
 Route::get('healthcheck', [HealthCheckController::class, 'healthCheck']);
 

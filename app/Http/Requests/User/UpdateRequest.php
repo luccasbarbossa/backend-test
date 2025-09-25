@@ -6,6 +6,8 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateRequest extends FormRequest
 {
+    // Sugestão: Regras atuais permitem valores nulos e não obrigam nenhum campo.       
+
     /**
      * Get the validation rules that apply to the request.
      *
