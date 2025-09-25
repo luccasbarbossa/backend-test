@@ -2,6 +2,8 @@
 
 namespace App\UseCases\User;
 
+// Sugestão: alias create_token não segue padrão de nomenclaturas PascalCase que as PSR's recomendam
+// Não encontrrei o uso do create_token em outros lugares do código
 use Throwable;
 use App\UseCases\BaseUseCase;
 use App\Repositories\Token\Create as create_token;

@@ -103,6 +103,8 @@ trait Logger
                 ],
             ];
 
+            // Sugestão: Não foi encontado no código a configuração do channel 'log_service'
+            // considerar usar Monolog diretamente para maior flexibilidade e controle dos logs
             Log::channel('log_service')->{$logLevel}($context['description'], $context);
         } catch (Throwable $e) {
             return [

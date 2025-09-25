@@ -47,6 +47,7 @@ class Find extends BaseRepository
      */
     public function handle(): ?array
     {
+        // Sugestão: O método find ignora o builder e busca apena pelo id primário, não considerando o filtro company_id
         $this->builder->where('company_id', $this->companyId);
 
         return $this->find($this->id);

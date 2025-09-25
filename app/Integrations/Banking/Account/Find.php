@@ -27,6 +27,7 @@ class Find extends Gateway
         $this->userId = $userId;
     }
 
+    // Sugestão: Definir o código de exceção 161001001 em uma constante para melhor entendimento do que se trata
     /**
      * Busca os dados de conta
      *
